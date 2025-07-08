@@ -14,4 +14,10 @@ def login(form_data: OAuth2PasswordRequestForm = Depends()):
         token=create_access_token(data={"sub":form_data.username})
         return {"access_token":token,"token_type":"bearer"}
     raise HTTPException(status_code=401, detail="Invalid credentials")
-
+@app.post("/students", dependencies=[Depends(verify_token)])
+def add_student(student: Student):
+    students.append(student)
+    return {"message": "Student added", "data": student}
+@app.get("/students", dependencies=[Depends(verify_token)])
+def get_students():
+    return students
