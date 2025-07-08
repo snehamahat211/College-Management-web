@@ -8,3 +8,10 @@ app = FastAPI()
 
 fake_user = {"username": "admin", "password": "admin123"}
 students = []
+@app.post("/login")
+def login(form_data: OAuth2PasswordRequestForm = Depends()):
+    if form_data.username == fake_user["username"] and form_data.password==fake_user["password"]:
+        token=create_access_token(data={"sub":form_data.username})
+        return {"access_token":token,"token_type":"bearer"}
+    raise HTTPException(status_code=401, detail="Invalid credentials")
+
