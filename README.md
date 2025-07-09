@@ -1,4 +1,4 @@
-# College Management Web (Backend API)
+# College Management WebService 
 
 **Author:** Sneha Mahat  
 **GitHub Repo:** [College-Management-web](https://github.com/snehamahat211/College-Management-web)  
@@ -63,7 +63,7 @@ API Docs: Swagger (FastAPI docs)
 
 Containerization: Docker + Docker Compose
 
-## Outputs
+## 5. Outputs
 #### 1.
 ![Output](output1.png)
 
@@ -75,6 +75,11 @@ Containerization: Docker + Docker Compose
 
 ###4.
 ![Output](output4.png)
+
+
+## 6. Conclusion
+This project successfully delivers a secure and scalable backend system for college management using FastAPI, PostgreSQL, and JWT authentication. The use of Docker and Docker Compose ensures easy deployment and consistency across environments. With clean API documentation, token-based protection, and database management via pgAdmin, the system is robust, maintainable.
+
 
 
 
