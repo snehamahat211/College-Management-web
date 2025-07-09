@@ -14,14 +14,14 @@ def startup():
 
 # Static single-user auth (from .env)
 fake_user = {"username": "admin", "password": "admin123"}
+students = []
 
 @app.post("/login")
 def login(form_data: OAuth2PasswordRequestForm = Depends()):
     if form_data.username == fake_user["username"] and form_data.password == fake_user["password"]:
         token = create_access_token(data={"sub": form_data.username})
-        return {"access_token": token, "token_type": "Bearer"}
+        return {"access_token": token, "token_type": "bearer"}
     raise HTTPException(status_code=401, detail="Invalid credentials")
-
 @app.post("/students", dependencies=[Depends(verify_token)])
 def add_student(student: Student, session: Session = Depends(get_session)):
     session.add(student)
