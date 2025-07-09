@@ -34,7 +34,6 @@ This project is a backend API for a College Management System built using **Fast
 
 ###  Clone the Repository
 
-```bash
 git clone https://github.com/snehamahat211/College-Management-web.git
 cd College-Management-web
 
@@ -46,8 +45,25 @@ cd College-Management-web
 
 docker-compose up --build
 
+
 To check logs:
 
 docker-compose logs -f
+
+## Tech Stack
+Backend Framework: FastAPI
+
+Database: PostgreSQL
+
+ORM: SQLAlchemy / SQLModel
+
+Authentication: JWT (with password hashing)
+
+API Docs: Swagger (FastAPI docs)
+
+Containerization: Docker + Docker Compose
+
+## Outputs
+
 
 
