@@ -5,16 +5,16 @@
 **Elective Subject:** Web Services  
 **Semester:** Sixth (6th)  
 **Department:** BE Software Engineering  
-**Roll No:** 221707  
+**Roll No:** 221742
 
 ---
-## 📌 Introduction
+## Introduction
 
 This project is a backend API for a College Management System built using **FastAPI**. It allows authorized users to perform CRUD operations on student data via RESTful APIs. The project uses **JWT-based authentication**, **PostgreSQL** as the relational database, and **Docker** for containerization.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Build a secure and lightweight backend API.
 - Authenticate users using **JWT tokens** via `/login` route.
@@ -25,19 +25,29 @@ This project is a backend API for a College Management System built using **Fast
 
 ---
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
-### ✅ Prerequisites
+### Prerequisites
 
 - Docker
 - Docker Compose
 
-### ✅ Clone the Repository
+###  Clone the Repository
 
 ```bash
 git clone https://github.com/snehamahat211/College-Management-web.git
 cd College-Management-web
 
+### Accessing Services API Documentation:
 
+`http://localhost:8000/docs`
+
+### Running with Docker
+
+docker-compose up --build
+
+To check logs:
+
+docker-compose logs -f
 
 
