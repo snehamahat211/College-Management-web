@@ -8,4 +8,8 @@
 **Roll No:** 221707  
 
 ---
+## 📌 Introduction
+
+This project is a backend API for a College Management System built using **FastAPI**. It allows authorized users to perform CRUD operations on student data via RESTful APIs. The project uses **JWT-based authentication**, **PostgreSQL** as the relational database, and **Docker** for containerization.
+
 
